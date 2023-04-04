@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgb(255, 254, 254) 76%, rgb(230, 228, 228) 100%);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #605f5f;
+}
+
+.menu-logo img {
+    max-width: 120px;
+}
+
+.menu {
+    max-width: 1960px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav ul {
+    text-align: center;
+    display: flex;
+    gap: 20px;
+}
+
+.menu-nav ul li {
+    position: relative;
+}
+
+.menu-nav ul li::after {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 0px;
+    left: -9px;
+    height: 100%;
+    width: 2px;
+    background-color: rgba(0, 0, 0, 0.302);
+
+}
+
+.menu-nav ul li:first-child::after {
+    display: none;
+}
+
+
+.principal {
+    max-width: 1960px;
+    margin: 0 auto;
+}
+
+.img_info img {
+    width: 100%;
+    height: 10%;
+}
+
+.info_sec {
+    margin: 0 auto;
+    display: flex;
+    max-width: 1960px;
+    padding-top: 42px;
+    display: flex;
+    max-width: 960px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 42px;
+}
+
+.info_sec img {
+    width: 230px;
+    border-radius: 10px;
+    padding: 4px;
+
+}
+
+.sobre_mim h4 {
+    padding-top: 5px;
+    font-size: 14px;
+    color: #605f5f;
+}
+
+.bg-sobre {
+    background-color: #e5e5e5;
+}
+
+#sobre {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 40px;
+    background-color: #e5e5e5;
+}
+
+#sobre img {
+    border-radius: 5px;
+    width: 300px;
+}
+
+.bg-footer {
+    max-width: 960px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.footer {
+    cursor: pointer;
+    display: flex;
+    max-width: 960px;
+    margin: 0 auto;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+
+.footer img {
+    width: 220px;
+}
+
+.footer {
+    max-width: 960px;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.footer .contact ul li img {
+    width: 30px;
+}
+
+.footer .contact ul li {
+    padding: 5px;
+}
+
+.footer .redes ul li {
+    padding: 12px;
+
+}
+
+
+.footer .redes ul {
+    display: flex;
+    cursor: pointer;
+}
+
+.footer .redes ul li img {
+    width: 30px;
+}
+
+footer {
+    align-items: center;
+    justify-content: center;
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+a {
+    color: black;
+}
+
+
+@media (max-width: 800px) {
+    .menu {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .info_sec {
+        flex-wrap: wrap;
+        margin: 0 auto;
+        justify-content: center;
+        margin-bottom: 13px;
+    }
+
+    #sobre {
+        flex-direction: column;
+    }
+
+    #sobre img {
+        width: 320px;
+    }
+
+    .footer .contact {
+        padding-bottom: 12px;
+    }
+
+
+}
